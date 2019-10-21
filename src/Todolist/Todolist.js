@@ -7,15 +7,21 @@ import {
   Text,
   TouchableOpacity
 } from 'react-native';
-
+import AddTodo from '../components/AddTodo'
 
 class Todolist extends React.Component{
 
+  state = {
+    todos:[],
+    visibilityFilter: 'SHOW_ALL_TODOS'
+  }
 
   render(){
     return(
-            <View>
-              <Text>Todolist</Text>
+            <View style={{flex:1, paddingTop:15}}>
+              <AddTodo/>
+              <View>
+              </View>
             </View>
       )
     }

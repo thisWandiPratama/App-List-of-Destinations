@@ -1,0 +1,3 @@
+const visibilityFiter = (state='SHOW_ALL,action') => {
+	return state
+}
