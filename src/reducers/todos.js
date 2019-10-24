@@ -4,7 +4,7 @@ const todos = (state=[],action ) => {
 		case 'ADD_TODO': 
 		return[
 			...state, {
-				id : nextId++,
+				id : action.id,
 				text : action.text,
 				completed : false 
 			}
